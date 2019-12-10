@@ -34,7 +34,8 @@ LasMap::LasMap()
 //    mVertices.push_back(v);
 
     //printSomePoints();
-    readFile("../VSIMOblig/LASdata/fuck.txt");
+    //readFile("../VSIMOblig/LASdata/fuck.txt");
+    readFile("C:/Users/Edvin/Desktop/eksamen_191210.txt");
 //    readFile("../VSIMOblig/LASdata/fuck2.txt");
 //    readFile("../VSIMOblig/LASdata/fuck3.txt");
 //    readFile("../VSIMOblig/LASdata/fuck4.txt");
@@ -77,7 +78,7 @@ void LasMap::init()
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (GLvoid *)(6 * sizeof(GLfloat)));
     glEnableVertexAttribArray(2);
 
-    glPointSize(1.f);
+    glPointSize(6.f);
 
     glBindVertexArray(0);
 }
